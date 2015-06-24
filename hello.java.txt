@@ -1,0 +1,12 @@
+package com.java2novice.math;
+ 
+public class MyFloorEx {
+ 
+    public static void main(String a[]){
+         
+        System.out.println("Floor value of 45: "+Math.floor(45));
+        System.out.println("Floor value of -45.6: "+Math.floor(-45.6));
+        System.out.println("Floor value of 72.1: "+Math.floor(72.1));
+        System.out.println("Floor value of 45.3: "+Math.floor(45.3));
+    }
+}
