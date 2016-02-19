@@ -1,0 +1,16 @@
+* @author Chirag007
+ */
+public class ifelse {
+    public static void main ( String [] args ){
+        int x = 100;
+        int y = 300;
+        if(x < y ){
+        System.out.println("x is leas then y ");
+        } else if( x == y){
+        System.out.println("x is equal to  y ");
+        }else if(x > y) {
+            System.out.println(" y is leas then x ");
+        }
+                
+    }
+}
