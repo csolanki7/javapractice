@@ -1,0 +1,19 @@
+ackage javaapplication2;
+
+import static java.time.Clock.system;
+
+/**
+ *
+ * @author Chirag007
+ */
+public class JavaApplication2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        System.out.println("my name is chirag solanki ");
+        // TODO code application logic here
+    }
+    
+}
