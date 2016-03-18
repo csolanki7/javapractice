@@ -1,0 +1,26 @@
+package javatest.pkg1;
+
+/**
+ *
+ * @author Chirag007
+ */
+public class Javatest1 {
+    
+    public static void main (String args[]) {
+        
+    
+    double pi , r , a ;
+    
+    r = 10.8;
+    pi = 3.14;
+    
+    a = pi * r * r;
+    
+    System.out.println("Areas of circle is " + a );
+    
+
+    }    
+    }
+     
+    output : 
+    Areas of circle is 366.2496000000001
