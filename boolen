@@ -1,0 +1,31 @@
+package javatest.pkg1;
+
+/**
+ *
+ * @author Chirag007
+ */
+public class Javatest1 {
+    
+  public static void main (String args[]){
+    boolean b;
+    
+    b = false;
+    
+    System.out.println(" b is " +b );
+    
+    b = true;
+   System.out.println("b is" +b);
+   if (b) System.out.println(" this is executed ");
+   
+   b = false;
+   
+   if (b) System.out.println(" this is not executed ");
+   System.out.println("10 > 9 is " + (10>9));
+  }
+ }
+ out put : 
+  b is false
+b istrue
+ this is executed 
+10 > 9 is true
+ 
