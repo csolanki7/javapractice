@@ -1,0 +1,23 @@
+class foreach {
+	public static void main (String args[]){
+	
+	for (int i=0; i<3; i++ ){
+	 
+	System.out.print(" pass  " + i + " : " );
+	   for (int j=0; j<100; j++){
+		if (j == 10) break;
+		System.out.print(j + " ");
+	}
+	System.out.println();
+	}
+	System.out.println("loops complete ! ");
+	}
+
+	 }
+  
+  output :
+  
+   pass  0 : 0 1 2 3 4 5 6 7 8 9 
+ pass  1 : 0 1 2 3 4 5 6 7 8 9 
+ pass  2 : 0 1 2 3 4 5 6 7 8 9 
+loops complete ! 
