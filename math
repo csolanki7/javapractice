@@ -1,0 +1,24 @@
+package javatest.pkg1;
+
+/**
+ *
+ * @author Chirag007
+ */
+public class Javatest1 {
+    
+  public static void main (String args[]){
+   
+      double a  , b;
+      a = 3.0;
+      b = 4.0;
+      
+      double c = Math.sqrt(a * a + b * b );
+      
+      System.out.println(" hypotonenuse is  " + c ) ; 
+      
+  }
+ }
+     
+ouotput : 
+
+hypotonenuse is  5.0
