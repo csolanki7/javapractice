@@ -1,0 +1,47 @@
+class foreach {
+	
+	public static void main (String args[]){
+		
+		int sum = 0;
+		
+		int nums [] [] = new int [3] [5] ;
+		
+		for (int i = 0; i < 3 ; i++ )
+		for (int j = 0; j < 5 ; j++)
+		 nums[i] [j] = (i + 1) * (j + 1 );
+		
+		
+		for( int x[] : nums){
+			
+			for (int y : x ) {
+				System.out.println("value is : " + y ); 
+				sum += y;
+				
+			}
+			
+			}
+			
+			System.out.println("summation :" +sum );
+		}
+	}
+
+
+output : 
+
+value is : 1
+value is : 2
+value is : 3
+value is : 4
+value is : 5
+value is : 2
+value is : 4
+value is : 6
+value is : 8
+value is : 10
+value is : 3
+value is : 6
+value is : 9
+value is : 12
+value is : 15
+summation :90
+
