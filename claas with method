@@ -1,0 +1,43 @@
+class box {
+	double width;
+	double height;
+	double depth;  
+
+void  volume () {
+	
+	System.out.println("volume is ");
+	System.out.println(width * height * depth);
+	
+}
+}
+
+class boxdemo {
+	public static void main (String args[]){
+		box mybox = new box();
+		box mybox2 = new box ();
+		
+		
+		mybox.width = 10;
+		mybox.height= 20;
+		mybox.depth= 15;
+		
+		
+		mybox2.width=3;
+		mybox2.height=6;
+		mybox2.depth=9;
+		
+		
+		mybox.volume();
+		mybox2.volume();
+		
+		}
+}	
+
+output :
+volume is 
+3000.0
+volume is 
+162.0
+
+
+		
