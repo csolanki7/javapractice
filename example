@@ -1,0 +1,61 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package lab5;
+import java.Util.scanner;
+/**
+ *
+ * @author csolanki7
+ */
+import java.util.Scanner;
+public class Lab5 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        
+        // TODO code application logic here
+        
+ 
+        Scanner input = new Scanner(System.in);
+         
+        
+        
+        System.out.println("Welcome to the Squares and Cubes Table"); 
+        
+        
+         
+         String choice = "Y"; 
+         
+         
+         while (choice.compareTo("Y")==0 || choice.compareTo("y")==0) {
+             
+         System.out.println("Ente the intger: "); 
+         
+         int kb= input.nextInt();
+         
+         System.out.printf("%-15s%-15s%-15s%-15s\n","Number","Squared","cubed","Square");
+         System.out.printf("%-15s%-15s%-15s%-15s\n","=====","=====","====","====");
+          
+         for (int i=1; i <= kb ;i++) {
+             
+         System.out.printf("%-15d%-15.0f%-15.0f%-15.0f\n",i,Math.pow(i,2),Math.pow(i,3),Math.sqrt(i));
+         
+         
+          }
+         
+         System.out.println("continue (y/n):");
+         choice = input.next(); 
+         
+         //if (choice.compareTo("y")!=0 )
+        
+         
+    }
+    
+}
+
+}
