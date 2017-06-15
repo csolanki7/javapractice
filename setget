@@ -1,0 +1,102 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package lab6;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author csolanki7
+ */
+public class Lab6 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        
+        // TODO code application logic here
+        
+        Scanner kb = new Scanner (System.in);
+        
+        System.out.println("Enter the width:");
+        double width = kb.nextDouble();
+        System.out.println("Enter the hight:");
+        double hight = kb.nextDouble(); 
+        
+      
+       Rectangle R1 = new Rectangle(); 
+       Rectangle R2 = new Rectangle(hight,width); 
+       R1.setwidth(width);
+       R1.setheight(hight);
+       
+       R2.setheight(hight);
+       R2.getwidth(width);
+       
+       
+        System.out.println("The width you enterd is : " +R1.getwidth(width));
+        System.out.println("The hight you enterd is : " +R1.gethight(hight));
+        
+         
+        System.out.println("The width you enterd is : " +R2.getwidth(width));
+        System.out.println("The hight you enterd is : " +R2.gethight(hight));
+        
+        System.out.println("This area is : " +R1.getArea());
+        System.out.println("This perimeter : " +R1.getPerimeter());
+        kb.close();
+        
+    }
+    
+}
+     class Rectangle{
+        
+       private  double width; 
+       private  double height; 
+        
+        public  Rectangle() {
+        this.height=0; 
+        this.width=0;
+        
+       }
+        
+        public  Rectangle(double H,double W) {
+                 this.height=H; 
+                 this.width=W;
+        
+       }
+        public  void setwidth(double w){
+            
+            this.width = w; 
+            
+        }
+        
+        public  void setheight(double h){
+            
+            this.height =h; 
+            
+        }
+        
+        public double gethight (double l) {
+            
+            return this.height = l; 
+        }
+        
+         public double getwidth (double w) {
+             
+            return this.width = w; 
+        }
+        
+        public double getArea() {
+            
+            return this.width * this.height;
+        }
+        
+        public double getPerimeter () {
+
+            return 2 *(this.width+ this.height);
+        }
+    }
