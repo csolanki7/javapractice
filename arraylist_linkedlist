@@ -1,0 +1,52 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package jdbc;
+
+/**
+ *
+ * @author csolanki7
+ */
+
+        
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.*;
+
+public class MysqlCon {
+	
+ public  static void main (String[] args) {
+     
+     ArrayList<Integer> arraylist = new ArrayList<>();
+     LinkedList<Integer> linkedlist = new LinkedList<>();
+     
+     doTiming("Arraylist",arraylist );
+     doTiming("LinkedList" ,linkedlist );
+     
+     
+ }
+ 
+  public static void doTiming (String type , List <Integer> list) {
+      
+      for (int i=0; i < 1E5; i++) {
+          
+          list.add(i);
+      }
+      
+      long start = System.currentTimeMillis();
+      
+      // ADD AT END  
+      
+      for (int i=0; i <1E5; i++) {
+          
+         list.add(0 , i);
+      }
+      long end = System.currentTimeMillis();
+      
+      System.out.println("Time take " +(end - start) + " ms for " +type);
+  }
+    
+}
