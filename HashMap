@@ -1,0 +1,45 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package jdbc;
+
+/**
+ *
+ * @author csolanki7
+ */
+
+        
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.*;
+
+public class MysqlCon {
+	
+ public  static void main (String[] args) {
+     
+     HashMap<Integer , String > Map = new HashMap<Integer , String>();
+     
+     Map.put(1, "one"); 
+     Map.put(2, "two");
+     Map.put(3, "three");
+     Map.put(4, "four");
+     
+     String text = Map.get(4); 
+     
+     System.out.println(text);
+     
+     for (Map.Entry<Integer,String> entry: Map.entrySet() ) {
+         
+         int key = entry.getKey();
+         String value = entry.getValue();
+         
+         System.out.println(key + " : " +value);
+        
+     }
+     
+  }
+    
+}
